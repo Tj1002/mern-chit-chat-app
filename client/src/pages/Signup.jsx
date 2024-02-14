@@ -58,11 +58,11 @@ function Signup() {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen ">
       <div className="flex flex-col items-center justify-center w-full">
-        <h1 className="text-5xl font-semibold text-center text-blue-500 flex flex-col">
+        <h1 className="text-3xl md:text-5xl font-semibold text-center text-blue-500 flex flex-col">
           Chit-Chat <span className="text-gray-300"> Signup</span>
         </h1>
 
-        <form onSubmit={handleSubmit} className="flex-flex-col w-1/3 ">
+        <form onSubmit={handleSubmit} className="flex-flex-col w-2/3 md:w-1/3 ">
           <div>
             <Label>
               <span className="text-base label-text">Full Name</span>

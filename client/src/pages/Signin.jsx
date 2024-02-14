@@ -48,11 +48,11 @@ export default function SignIn() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen ">
       <div className="flex flex-col items-center justify-center w-full">
-        <h1 className="flex flex-col text-5xl font-semibold text-center text-blue-500">
+        <h1 className="flex flex-col text-3xl md:text-5xl font-semibold text-center text-blue-500">
           Chit-Chat
           <span className="text-gray-300"> Login</span>
         </h1>
-        <form onSubmit={handleSubmit} className="flex flex-col w-1/3 ">
+        <form onSubmit={handleSubmit} className="flex flex-col w-2/3 md:w-1/3 ">
           <div>
             <Label className="label p-2">
               <span className="text-base label-text">Email</span>

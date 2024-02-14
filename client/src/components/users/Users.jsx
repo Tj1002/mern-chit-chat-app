@@ -28,7 +28,7 @@ function Users({ user }) {
           <Avatar img={user.profilePic} src="user" rounded />
         )}
 
-        <span className="text-2xl font-bold">{user.username}</span>
+        <span className="text-sm sm:text-xl font-bold">{user.username}</span>
       </div>
     </>
   );

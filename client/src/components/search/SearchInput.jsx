@@ -15,6 +15,7 @@ function SearchInput() {
     if (searchInput.lenth < 3) {
       return;
     }
+
     const user = users.find((u) =>
       u.fullName.toLowerCase().includes(searchInput.toLowerCase())
     );
@@ -25,6 +26,7 @@ function SearchInput() {
       console.log("error in searching");
     }
   };
+
   return (
     <form onSubmit={handleSearch} className="flex flex-row gap-2 py-2 w-full">
       <TextInput

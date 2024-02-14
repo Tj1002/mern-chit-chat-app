@@ -64,9 +64,9 @@ function ChatPage() {
         </div>
       </div>
       {/* container */}
-      <div className="container mx-auto flex flex-row gap-2 flex-1 overflow-hidden">
+      <div className="container mx-auto flex flex-row gap-2 overflow-hidden">
         {/* left side container */}
-        <div className="flex-1 border-r-2 overflow-y-auto">
+        <div className="flex-grow flex-1 border-r-2 overflow-y-auto">
           <SearchInput />
           {/* for getting users */}
           <div className="flex flex-col mt-4 h-[400px] overflow-y-auto mr-2">
@@ -87,7 +87,7 @@ function ChatPage() {
             ) : null}
           </div>
         </div>
-        <div className="flex-1 overflow-y-auto ml-2">
+        <div className="flex-grow flex-2 md:flex-1 overflow-y-auto ml-2">
           <div>
             <MessageContainer />
           </div>
