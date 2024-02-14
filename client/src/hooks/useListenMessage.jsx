@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setMessages } from "../redux/features/users/allUsersSlice";
 import { useSocketContext } from "../context/socketContext";
 import notificationSound from "./../assets/sounds/notification.mp3";
 const useListenMessages = () => {
+  const dispatch = useDispatch();
   const { socket } = useSocketContext();
   const { messages } = useSelector((state) => state.allUser);
   useEffect(() => {
@@ -13,7 +14,7 @@ const useListenMessages = () => {
       const sound = new Audio(notificationSound);
 
       sound.play();
-      setMessages([...messages, newMessage]);
+      dispatch(setMessages([...messages, newMessage]));
     });
 
     return () => socket?.off("newMessage");

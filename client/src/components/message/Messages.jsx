@@ -7,9 +7,10 @@ import useListenMessages from "../../hooks/useListenMessage";
 
 function Messages() {
   const dispatch = useDispatch();
-  useListenMessages();
+
   const [loading, setLoading] = useState(false);
   const { messages, selectedUser } = useSelector((state) => state.allUser);
+  useListenMessages();
   const lastMessageRef = useRef();
   useEffect(() => {
     setTimeout(() => {
