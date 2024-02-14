@@ -3,11 +3,14 @@ import { BsChatHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 function Home() {
   return (
-    <div className="flex flex-col justify-center items-center dark:text-white h-screen">
+    <div className=" container flex flex-col justify-center items-center dark:text-white h-screen">
       <div className="flex flex-col items-center gap-2 text-center">
         <div className="flex items-center justify-center ">
-          <span className="font-bold text-4xl text-nowrap">
-            Welcome to <span className="text-blue-600 text-5xl">Chit-Chat</span>
+          <span className="font-bold text-2xl md:4xl text-nowrap">
+            Welcome to{" "}
+            <span className="text-blue-600 text-4xl md:text-5xl">
+              Chit-Chat
+            </span>
             app
           </span>
         </div>
